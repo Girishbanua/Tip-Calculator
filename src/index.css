@@ -1,0 +1,38 @@
+@import "tailwindcss";
+:root {
+  font-family: "Space Mono";
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  @apply bg-slate-900 flex items-center justify-center h-[100vh];
+}
+.left form > div {
+  @apply flex flex-col p-2 mt-3;
+}
+.left label {
+  @apply mb-2 font-bold text-gray-800;
+}
+.left input {
+  @apply text-2xl p-2 bg-green-200 rounded-lg border-[1px] border-sky-900;
+}
+button {
+  @apply bg-sky-900 w-[125px] h-[50px] rounded-md text-white cursor-pointer hover:bg-sky-800;
+}
+.right_btn {
+  @apply w-full;
+}
+.right p{
+  @apply text-gray-300
+}
+.right h1 {
+@apply text-sky-500 font-bold text-5xl
+}
+.right .up div{
+  @apply flex items-center justify-between
+}
