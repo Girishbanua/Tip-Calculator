@@ -10,8 +10,9 @@
   --White: hsl(0, 0%, 100%);
 }
 body {
-  @apply bg-slate-900 flex items-center justify-center h-[100vh];
+  @apply bg-slate-900 flex items-center justify-center min-h-screen p-2 sm:p-0;
 }
+
 .left form > div {
   @apply flex flex-col p-2 mt-3;
 }
@@ -19,20 +20,22 @@ body {
   @apply mb-2 font-bold text-gray-800;
 }
 .left input {
-  @apply text-2xl p-2 bg-green-200 rounded-lg border-[1px] border-sky-900;
+  @apply text-lg sm:text-2xl p-3 bg-green-200 rounded-lg border border-sky-900;
 }
 button {
-  @apply bg-sky-900 w-[125px] h-[50px] rounded-md text-white cursor-pointer hover:bg-sky-800;
+  @apply bg-sky-900 w-full sm:w-[125px] h-[50px] rounded-md text-white cursor-pointer hover:bg-sky-800;
 }
+
 .right_btn {
   @apply w-full;
 }
-.right p{
-  @apply text-gray-300
+.right p {
+  @apply text-gray-300;
 }
 .right h1 {
-@apply text-sky-500 font-bold text-5xl
+  @apply text-sky-500 font-bold text-3xl sm:text-5xl;
 }
-.right .up div{
-  @apply flex items-center justify-between
+
+.right .up div {
+  @apply flex items-center justify-between;
 }

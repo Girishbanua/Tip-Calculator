@@ -48,7 +48,7 @@ const App = () => {
   }
 
   return (
-    <div className="bg-white h-[100vh] flex flex-col sm:flex-row sm:w-[900px] p-4 rounded-4xl">
+    <div className="bg-white min-h-screen sm:min-h-0 flex flex-col sm:flex-row w-full sm:max-w-[900px] p-4 sm:p-6 rounded-3xl">
       {/* ------------------- left side of the box ------------------- */}
       <div className="left flex-1">
         {/* ----------------- bill_input -----------------*/}
@@ -66,7 +66,7 @@ const App = () => {
           {/* ----------------- select_tip ----------------- */}
           <div className="select_tip">
             <label htmlFor="tip">Select Tip %</label>
-            <div className="tip_percents flex flex-wrap gap-[10px] ">
+            <div className="tip_percents grid grid-cols-2 sm:grid-cols-3 gap-3">
               <button type="button" id="5" onClick={handlebtnclick}>
                 5%
               </button>
@@ -83,9 +83,8 @@ const App = () => {
                 50%
               </button>
               <input
-                type="text"
-                placeholder="Custom"
-                className="w-[125px] h-[50px] "
+                type="number"
+                className="w-full h-[50px] text-center"
                 id="tip"
                 onChange={handleCustomTip}
               />
@@ -104,7 +103,7 @@ const App = () => {
         </form>
       </div>
       {/* ------------------- right side of the box ------------------- */}
-      <div className="right bg-sky-950 flex-1 mt-10 sm:mt-0 rounded-3xl p-5 flex flex-col items-center justify-between ">
+      <div className="right bg-sky-950 flex-1 mt-6 sm:mt-0 rounded-3xl p-5 sm:p-8 flex flex-col justify-between">
         <div className="up w-full flex flex-col gap-8 mt-[20px]">
           <div>
             <p>
