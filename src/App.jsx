@@ -48,7 +48,7 @@ const App = () => {
   }
 
   return (
-    <div className="bg-white min-h-screen sm:min-h-0 flex flex-col sm:flex-row w-full sm:max-w-[900px] p-4 sm:p-6 rounded-3xl">
+    <div className="bg-white min-h-screen sm:min-h-0 flex flex-col gap-3 sm:flex-row w-full sm:max-w-[900px] p-4 sm:p-6 rounded-3xl">
       {/* ------------------- left side of the box ------------------- */}
       <div className="left flex-1">
         {/* ----------------- bill_input -----------------*/}
@@ -83,9 +83,9 @@ const App = () => {
                 50%
               </button>
               <input
-                type="number"
                 className="w-full h-[50px] text-center"
                 id="tip"
+                placeholder="custom"
                 onChange={handleCustomTip}
               />
             </div>
